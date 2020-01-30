@@ -4,16 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test --env=jsdom",
+    "lint": "eslint src/**/*.js",
+    "test:update": "react-scripts test --updateSnapshot",
+    "build": "react-scripts build",
+    "start": "react-scripts start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alwynblake/simple_counter.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alwynblake/simple_counter/issues"
+  "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.2.0",
+    "react-test-renderer": "^16.12.0"
   },
-  "homepage": "https://github.com/Alwynblake/simple_counter#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
