@@ -17,17 +17,10 @@ class Counter extends React.Component {
   };
 
   updateCounter(count) {
-    let polarity = '';
-    if (count > 0) {
-      polarity = 'positive';
-    } else if (count < 0) {
-      polarity = 'negative';
-    }
-    this.setState({ count, polarity });
+    this.setState({ count});
   }
-
   render() {
-    let classes = ['count', this.state.polarity].join(' ');
+    let classes = ['count', this.state];
     return (
         <section className="counter">
           <a href="#" className="down clicker" onClick={this.handleDown}>
