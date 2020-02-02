@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from './components/header/header.js';
 import Counter from './components/counter/counter.js';
 import './app.scss';
