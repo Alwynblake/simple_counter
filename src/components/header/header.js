@@ -5,6 +5,7 @@ class Header extends React.Component {
     return (
         <header>
           <h1>Counters Are Fun</h1>
+          <h2>Integers increase and decrease when + or - is selected</h2>
         </header>
     );
   }
